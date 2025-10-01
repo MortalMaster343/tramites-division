@@ -5,9 +5,5 @@ steps:
   args: ['push', 'gcr.io/$PROJECT_ID/tramites-division']
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: gcloud
-  args: ['run', 'deploy', 'tramites-division',
-         '--image', 'gcr.io/$PROJECT_ID/tramites-division',
-         '--platform', 'managed',
-         '--region', 'us-central1',
-         '--allow-unauthenticated']
+  args: ['run', 'deploy', 'tramites-division', '--image', 'gcr.io/$PROJECT_ID/tramites-division', '--platform', 'managed', '--region', 'us-central1', '--allow-unauthenticated']
 
